@@ -1,0 +1,102 @@
+header{
+	background-color:black;
+	height:120px;
+	padding:25px 10px;
+}
+.logo{
+	color:white;
+	font-size:50px;
+	margin-left: 30px;
+}
+nav,
+nav ul{
+	display:inline-block;
+}
+header nav a{
+	color: white;
+}
+.navbar-li{
+	display:inline-block;
+	padding:10px;
+	font-size:20px;
+}
+.box{
+	position:relative;
+}
+.sec1{
+	background-color:black;
+	margin-top:50px;
+}
+.box{
+	display:inline-block;
+	vertical-align:top;
+	margin-inline:25px;
+}
+.box p,
+.MG p {
+	position:absolute;
+	padding:10px;
+	background-color:white;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.box p{
+	transition-property:all;
+	transition-duration:4s;
+}
+.LOTR{
+	width:550px;
+}
+.sec2{
+	margin-top:50px;
+	margin-left:25px;
+}
+
+.MG{
+	position: relative;
+	width:500px;
+	height:400px;
+	background-image:url("../image/WORLD.jpg");
+	background-position:top center;
+}
+.sec3{
+	margin-top: 50px
+}
+.MG1{
+	background-image:url("../image/WORLD.jpg");
+	background-position:top center;
+	background-size:cover;
+	height:200px;
+	background-attachment:fixed;
+}
+.box p:hover{
+	color:white;
+	background-color:black;
+	font-size:20px;
+}
+.MG p:hover{
+	display:none;
+}
+.navbar-li::after{
+	content:"";
+	width: 0;
+	height:5px;
+	position: absolute;
+	bottom:-10px;
+	left:50px;
+	transform:translateX(50px);
+	transition:all 0.5s;
+	display:block;
+	background-color:white;
+}
+.navbar-li:hover::after{
+	width: 50%;
+}
+.navbar a{
+	text-transform:uppercase;
+}
+body{
+	background-color:grey
+}
+
